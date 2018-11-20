@@ -1,0 +1,124 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cardViewNume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+
+        style="@style/CardAccount">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/PacientTreatmentPersonal.linearLayout">
+
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.dateOfAdmittance"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Data internarii:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.diagnostic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Diagnostic: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.dataOfApply1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Data aplicarii medicatiei: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.treatment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Mediactie: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.details1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Detalii: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.dataOfApply2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Data aplicarii medicatiei: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.treatment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Mediactie: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.details2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Detalii: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.dataOfApply3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Data aplicarii medicatiei: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.treatment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Mediactie: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.details3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Detalii: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/PacientTreatmentPersonal.dateOfRelease"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Data externarii:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

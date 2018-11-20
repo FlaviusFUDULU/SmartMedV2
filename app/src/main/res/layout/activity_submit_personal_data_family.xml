@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.ffudulu.licenta.SubmitPersonalData"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Family.LogoImage"
+            android:src="@mipmap/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Family.txtFirstName"
+            android:background="@drawable/input_background"
+            android:hint="Prenume"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/Family.LogoImage"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Family.txtLastName"
+            android:background="@drawable/input_background"
+            android:hint="Nume"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/Family.txtFirstName"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:id="@+id/Family.ProfilePicture"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/Family.txtLastName"
+            android:layout_above="@+id/Family.txtPacientID"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@+id/Family.txtLastName"/>
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/Family.imageButtonPhoto"
+            android:background="@mipmap/camera"
+            android:layout_toRightOf="@+id/Family.ProfilePicture"
+            android:layout_below="@+id/Family.txtLastName"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="20dp" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Family.imageButtonUpload"
+            android:layout_below="@+id/Family.imageButtonPhoto"
+            android:layout_alignStart="@+id/Family.imageButtonPhoto"
+            android:background="@mipmap/folder"
+            android:layout_marginStart="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fotografiează"
+            android:id="@+id/Family.lblTakePhoto"
+            android:layout_alignTop="@+id/Family.imageButtonPhoto"
+            android:layout_toEndOf="@+id/Family.imageButtonPhoto"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Încarcă imagine"
+            android:id="@+id/Family.lblUploadPhoto"
+            android:layout_alignTop="@+id/Family.imageButtonUpload"
+            android:layout_toEndOf="@+id/Family.imageButtonUpload"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/Family.txtPacientID"
+            android:background="@drawable/input_background"
+            android:hint="Cod unic pacient"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/Family.lblUploadPhoto"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salveaza"
+            android:id="@+id/Family.btnSaveChanges"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            android:background="@drawable/btn_background"
+            android:layout_below="@+id/Family.txtPacientID"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp" />
+
+
+        <ProgressBar
+            android:id="@+id/Family.progressBarUpload"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress_bar1"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/Family.imageButtonUpload"
+            android:layout_below="@+id/Family.txtLastName"
+            android:layout_marginTop="15dp"
+            >
+        </ProgressBar>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.ffudulu.licenta.SubmitPersonalData"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PacientInt.LogoImage"
+            android:src="@mipmap/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.uID"
+            android:background="@drawable/input_background"
+            android:hint="Cod unic pacient"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.LogoImage"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.txtFirstName"
+            android:background="@drawable/input_background"
+            android:hint="Prenume"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.uID"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.txtLastName"
+            android:background="@drawable/input_background"
+            android:hint="Nume"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.txtFirstName"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salveaza"
+            android:id="@+id/PacientInt.btnSaveChanges"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            android:background="@drawable/btn_background"
+            android:layout_below="@+id/PacientInt.dataexternarii"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.txtdataInternarii"
+            android:background="@drawable/input_background"
+            android:hint="Data Internarii"
+            android:inputType="date"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.txtLastName"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.diagnostic"
+            android:background="@drawable/input_background"
+            android:hint="Diagnostic"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.txtdataInternarii"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.medicatie"
+            android:background="@drawable/input_background"
+            android:hint="Medicatie"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.diagnostic"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.dataMedicatiei"
+            android:background="@drawable/input_background"
+            android:hint="Data Aplicarii Medicatiei"
+            android:inputType="date"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.medicatie"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.detalii"
+            android:background="@drawable/input_background"
+            android:hint="Detalii"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.dataMedicatiei"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/PacientInt.dataexternarii"
+            android:background="@drawable/input_background"
+            android:hint="Data Externarii"
+            android:inputType="date"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/PacientInt.detalii"
+            android:layout_alignParentStart="true" />
+
+        <ProgressBar
+            android:id="@+id/PacientInt.progressBarUpload"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress_bar1"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/PacientInt.btnSaveChanges"
+            android:layout_below="@+id/PacientInt.txtLastName"
+            android:layout_marginTop="15dp"
+            >
+        </ProgressBar>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+
+    android:id="@+id/cardViewNume"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+
+    style="@style/CardAccount">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/AllPacientsRoom.photo"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:maxWidth="37dp"
+            android:maxHeight="37dp"/>
+
+        <TextView
+            android:id="@+id/AllPacientsRoom.fullName"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Nume:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/AllPacientsRoom.salon"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AllPacientsRoom.fullName"
+            android:layout_marginLeft="60dp"
+            android:text="Salon: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#ffffff" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/AllPacientsRoom.fullName">
+            <ImageView
+                android:id="@+id/AllPacientsRoom.seeProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/AllPacientsRoom.seeMedicalRecord"
+                android:src="@mipmap/account_settings" />
+
+            <ImageView
+                android:id="@+id/AllPacientsRoom.seeMedicalRecord"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/file_document" />
+            <ImageView
+                android:id="@+id/AllPacientsRoom.makeInternare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/AllPacientsRoom.seeMedicalRecord"
+                android:src="@mipmap/ic_internare_white" />
+            <ImageView
+                android:id="@+id/AllPacientsRoom.firstTreatment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/AllPacientsRoom.seeMedicalRecord"
+                android:src="@mipmap/ic_receipt_white_24dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

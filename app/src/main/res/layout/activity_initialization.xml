@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    app:theme="@style/AppTheme.NoActionBar"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/initialize.LogoImage"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/initialize.loading_text"
+        android:text="Se inițializează! \nVă rugăm așteptați!"
+        android:layout_below="@+id/initialize.LogoImage"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <ProgressBar
+        android:id="@+id/initialization.progressBarLogIn"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:indeterminateDrawable="@drawable/progress_bar1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/initialize.loading_text">
+    </ProgressBar>
+
+</RelativeLayout>
+
+

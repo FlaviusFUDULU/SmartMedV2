@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.DeviceDefault.CalendarView">
+        <item name="android:headerBackground">#656565</item>
+    </style>
+
+    <style name="CardAccount" parent="CardView.Dark">
+        <item name="cardBackgroundColor">@color/colorPrimaryDark</item>
+        <item name="android:fillColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="CardAccountNewsFeed" parent="CardView.Dark">
+        <item name="cardBackgroundColor">@color/colorAccent</item>
+        <item name="android:fillColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:actionBarStyle">@style/CustomTransparentActionBar</item>
+        <item name="windowActionBarOverlay">true</item >
+        <item name="android:windowActionBarOverlay">true</item >
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="Base.ThemeOverlay.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/CustomTransparentActionBar</item>
+    </style>
+
+    <style name="CustomTransparentActionBar" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:background">#bca8a8</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+</resources>
