@@ -96,19 +96,23 @@ public class MainDrawer extends AppCompatActivity
         MenuItem rooms = menu.findItem(R.id.nav_see_rooms);
         MenuItem myTreatment = menu.findItem(R.id.nav_my_treatment);
         MenuItem whoIsSeeing = menu.findItem(R.id.nav_who_is_seeing);
+        MenuItem analytics = menu.findItem(R.id.nav_my_statistics);
         try {
             if(userCacherType.readCache().contains("Pacient") ||
                     userCacherType.readCache().contains("Family")){
                 seeAllPacients.setVisible(false);
                 newPacient.setVisible(false);
                 rooms.setVisible(false);
+                analytics.setVisible(false);
             } else if (userCacherType.readCache().contains("Staff")){
                 myTreatment.setVisible(false);
                 whoIsSeeing.setVisible(false);
+
             }
             if (userCacherType.readCache().contains("Family")){
                 whoIsSeeing.setVisible(false);
                 myTreatment.setTitle("Istoric medical membru familie");
+                analytics.setVisible(false);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -214,17 +218,33 @@ public class MainDrawer extends AppCompatActivity
         //end
         try {
             if (userCacherType.readCache().contains("Staff")) {
-                FragmentNewsFeed fragmentNewsFeed = new FragmentNewsFeed();
-                android.support.v4.app.FragmentTransaction fragmentTransaction =
-                        getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.main_fl_content, fragmentNewsFeed);
-                fragmentTransaction.commit();
+                if (userCacher.readCache().getRank().equals("Admin")){
+                    seeAllPacients.setVisible(false);
+                    newPacient.setVisible(false);
+                    rooms.setVisible(false);
+                    analytics.setVisible(false);
+
+                    //TO DO: FF HERE
+                    FragmentNewsFeedAdmin fragmentNewsFeedAdmin = new FragmentNewsFeedAdmin();
+                    android.support.v4.app.FragmentTransaction fragmentTransaction =
+                            getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.main_fl_content, fragmentNewsFeedAdmin);
+                    fragmentTransaction.commit();
+                }
+                else {
+                    FragmentNewsFeed fragmentNewsFeed = new FragmentNewsFeed();
+                    android.support.v4.app.FragmentTransaction fragmentTransaction =
+                            getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.main_fl_content, fragmentNewsFeed);
+                    fragmentTransaction.commit();
+                }
             } else if (userCacherType.readCache().contains("Pacient")){
                 FragmentMainDrawerPacient fragmentNewsFeedPacient = new FragmentMainDrawerPacient();
                 android.support.v4.app.FragmentTransaction fragmentTransaction =
                         getSupportFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.main_fl_content, fragmentNewsFeedPacient);
                 fragmentTransaction.commit();
+
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -322,7 +342,20 @@ public class MainDrawer extends AppCompatActivity
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.main_fl_content, fragmentTest);
             fragmentTransaction.commit();
-        } else if (id == R.id.nav_see_rooms) {
+
+        } else if (id == R.id.nav_my_statistics) {
+            actionCacherDrawer = new FileCacher<>(MainDrawer.this, "drawerAction");
+            try {
+                actionCacherDrawer.writeCache("statistici");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            FragmentAnalytics fragmentAnalytics = new FragmentAnalytics();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.main_fl_content, fragmentAnalytics);
+            fragmentTransaction.commit();
+        }else if (id == R.id.nav_see_rooms) {
             actionCacherDrawer = new FileCacher<>(MainDrawer.this, "drawerAction");
             try {
                 actionCacherDrawer.writeCache("seeRooms");

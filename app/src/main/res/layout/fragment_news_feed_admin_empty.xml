@@ -1,0 +1,291 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/tools"
+
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/NewFeedTmpAdmin.cardView"
+                style="@style/CardAccountNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"
+                card_view:cardBackgroundColor="#5B4CAF50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NewsFeedTmpAdmin.category"
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Cel mai satisfăcător timp:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/NewsFeedTmpAdmin.photo"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:maxWidth="37dp"
+                            android:maxHeight="37dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/NewsFeedTmpAdmin.fullName"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/NewsFeedTmpAdmin.photo"
+                            android:text="Nume:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/NewsFeedTmpAdmin.timp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/NewsFeedTmpAdmin.fullName"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/NewsFeedTmpAdmin.photo"
+                            android:maxWidth="240dp"
+                            android:text="timp:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/NewFeedTmpAdmin.cardView2"
+                style="@style/CardAccountNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="#7CCDDC39">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NewsFeedTmpAdmin.category2"
+                        android:layout_width="376dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Timpul mediu:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#FF9800" />
+
+
+
+                        <TextView
+                            android:id="@+id/NewsFeedTmpAdmin.timp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="timp:"
+                            android:maxWidth="240dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textColor="#FF9800"
+                            android:textStyle="italic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/NewFeedTmpAdmin.cardView2.2"
+                style="@style/CardAccountNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="#7CCDDC39">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NewsFeedTmpAdmin.category2.2"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Timpul mediu:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#FF9800" />
+
+
+
+                    <TextView
+                        android:id="@+id/NewsFeedTmpAdmin.timp2.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="timp:"
+                        android:maxWidth="240dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#FF9800"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/NewFeedTmpAdmin.cardView3"
+                style="@style/CardAccountNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="#7AF44336">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/NewsFeedTmpAdmin.category3"
+                        android:layout_width="378dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Cel mai nesatisfăcător timp:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#FA0707" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/NewsFeedTmpAdmin.photo3"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:maxWidth="37dp"
+                            android:maxHeight="37dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:id="@+id/NewsFeedTmpAdmin.fullName3"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/NewsFeedTmpAdmin.photo3"
+                            android:text="Nume:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="#FA0707" />
+
+                        <TextView
+                            android:id="@+id/NewsFeedTmpAdmin.timp3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/NewsFeedTmpAdmin.fullName3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/NewsFeedTmpAdmin.photo3"
+                            android:text="timp:"
+                            android:maxWidth="240dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textColor="#FA0707"
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/NewFeedTmpAdmin.cardView4"
+                style="@style/CardAccountNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="#7AF44336">
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dip"
+                    android:id="@+id/NewFeedTmpAdmin.lineGraph4"
+                    />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/NewFeedTmpAdmin.cardView5"
+                style="@style/CardAccountNewsFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                card_view:cardBackgroundColor="#7AF44336">
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:id="@+id/NewFeedTmpAdmin.lineGraph5"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -27,6 +27,10 @@
             android:icon="@mipmap/ic_receipt_white_24dp"
             android:title="Istoric medical" />
         <item
+            android:id="@+id/nav_my_statistics"
+            android:icon="@mipmap/ic_analytics"
+            android:title="Statistici" />
+        <item
             android:id="@+id/nav_who_is_seeing"
             android:icon="@mipmap/family"
             android:title="Acces familie" />

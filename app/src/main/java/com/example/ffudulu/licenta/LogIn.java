@@ -182,6 +182,7 @@ public class LogIn extends Activity {
 
     private void goToRegister(){
         Intent mRegister = new Intent(LogIn.this, Register.class);
+        //Intent mRegister = new Intent(LogIn.this, QRActivity.class);
         startActivity(mRegister);
     }
 

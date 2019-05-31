@@ -30,7 +30,7 @@
         android:id="@+id/MainDrawerPacient.Finalizare"
         android:layout_width="200dp"
         android:layout_height="300dp"
-        app:srcCompat="@mipmap/btn_finalizare"
+        app:srcCompat="@mipmap/btn_anulare"
         android:layout_centerHorizontal="true"/>
 
     <ImageView

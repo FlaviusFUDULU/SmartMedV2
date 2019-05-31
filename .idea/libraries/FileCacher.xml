@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="FileCacher">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/FileCacher.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -18,6 +18,9 @@ public class Notification implements Serializable {
     private String type;
     private String handeled;
     private String dateAndTime;
+    private String handledDateAndTime;
+    private String duration;
+
 
     public Notification(String message, UserPersonalData userPacient, String acces, String priority,
                         String type, String dateAndTime) {
@@ -72,11 +75,31 @@ public class Notification implements Serializable {
         return type;
     }
 
+    public void setUserMedic(UserMedic userMedic) {
+        this.userMedic = userMedic;
+    }
+
     public String getHandeled() {
         return handeled;
     }
 
     public void setHandeled(String handeled) {
         this.handeled = handeled;
+    }
+
+    public String getHandledDateAndTime() {
+        return handledDateAndTime;
+    }
+
+    public void setHandledDateAndTime(String handledDateAndTime) {
+        this.handledDateAndTime = handledDateAndTime;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
     }
 }
